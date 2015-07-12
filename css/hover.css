@@ -1,0 +1,60 @@
+/* CSS3 STYLE GENERIC */
+.cf,
+.cf2{
+   width: 100%;
+   /*position: relative;*/
+}
+.mask-img,
+.mask-img{
+   width: 100%;
+   transform: translateY(-50%);
+   background-color: rgba(0,0,0,0.7);
+   position: absolute;
+   top: 50%;
+   left: 0;
+   opacity: 0;
+   overflow:visible;
+   text-align: center;
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+.cf .mask-img .product-info,
+.cf2 .mask-img .product-info{
+   /*transform: translateY(100%);*/
+   max-width: 100%;
+   height: auto;
+}
+.cf .mask-img .product-info h6,
+.cf2 .mask-img .product-info h6{
+   font-family: 'latoblack';
+   font-size: 12px;
+   letter-spacing: 1px;
+   line-height: 14.4px;
+   color: #aaaaaa;
+   /*transform: translateY(-50%);*/
+} 
+.cf .mask-img .product-info h1,
+.cf2 .mask-img .product-info h1{
+   font-family: 'latoblack';
+   font-size: 36px;
+   line-height: 43.2px;
+   letter-spacing: -0.4px;
+   color: #fff;
+}
+.cf:hover .mask-img,
+.cf2:hover .mask-img{
+   width: 100%;
+   /*height: 100%;*/
+   opacity: 1;
+}
+.mask .mask-blog .pe-7s-photo{
+   font-size: 48px;
+   line-height: 48px;
+   letter-spacing: -0.4px;
+}
+/*.mask:hover .mask-blog{
+   border:100px solid rgba(0,0,0,0.7);
+}*/

@@ -1,0 +1,21 @@
+/* CSS3 EFFECTS */
+
+/* THIRD EFFECTS */
+
+#cf .mask {
+   opacity: 0;
+   overflow:visible;
+   border:100px solid rgba(0,0,0,0.7);
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   box-sizing:border-box;
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+#cf:hover .mask {
+   opacity: 1;
+   border:100px solid rgba(0,0,0,0.7);
+}
