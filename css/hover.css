@@ -2,19 +2,25 @@
 .cf,
 .cf2{
    width: 100%;
-   /*position: relative;*/
 }
-.mask-img,
 .mask-img{
    width: 100%;
-   transform: translateY(-50%);
-   background-color: rgba(0,0,0,0.7);
    position: absolute;
-   top: 50%;
-   left: 0;
+   top: 0%;
    opacity: 0;
-   overflow:visible;
-   text-align: center;
+   overflow:hidden;
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+.mask .mask-blog .pe-7s-photo{
+   width: 100%;
+   position: absolute;
+   top: 0%;
+   opacity: 0;
+   overflow:hidden;
    -webkit-transition: all 0.4s ease-in-out;
    -moz-transition: all 0.4s ease-in-out;
    -o-transition: all 0.4s ease-in-out;
@@ -23,9 +29,17 @@
 }
 .cf .mask-img .product-info,
 .cf2 .mask-img .product-info{
-   /*transform: translateY(100%);*/
-   max-width: 100%;
-   height: auto;
+   width: 100%;
+   transform: translateY(-50%);
+   position: absolute;
+   top: 50%;
+   opacity: 1;
+   overflow:visible;
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
 }
 .cf .mask-img .product-info h6,
 .cf2 .mask-img .product-info h6{
@@ -34,7 +48,6 @@
    letter-spacing: 1px;
    line-height: 14.4px;
    color: #aaaaaa;
-   /*transform: translateY(-50%);*/
 } 
 .cf .mask-img .product-info h1,
 .cf2 .mask-img .product-info h1{
@@ -47,7 +60,13 @@
 .cf:hover .mask-img,
 .cf2:hover .mask-img{
    width: 100%;
-   /*height: 100%;*/
+   opacity: 1;
+   height: 100%;
+   background-color: rgba(0,0,0,0.7);
+   transition: all 0.4s ease-in-out;
+}
+.mask:hover .mask-blog{
+   background-color: rgba(0,0,0,0.7);
    opacity: 1;
 }
 .mask .mask-blog .pe-7s-photo{
@@ -55,6 +74,35 @@
    line-height: 48px;
    letter-spacing: -0.4px;
 }
-/*.mask:hover .mask-blog{
-   border:100px solid rgba(0,0,0,0.7);
-}*/
+.vertical .carousel-inner {
+  height: 100%;
+}
+.carousel.vertical .item {
+   -webkit-transition: 0.6s ease-in-out top;
+   -moz-transition: 0.6s ease-in-out top;
+   -ms-transition: 0.6s ease-in-out top;
+   -o-transition: 0.6s ease-in-out top;
+   transition: 0.6s ease-in-out top;
+}
+.carousel.vertical .active {
+   top: 0;
+}
+.carousel.vertical .next {
+   top: 400px;
+}
+.carousel.vertical .prev {
+   top: -400px;
+}
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+   top: 0;
+}
+.carousel.vertical .active.left {
+   top: -400px;
+}
+.carousel.vertical .active.right {
+   top: 400px;
+}
+.carousel.vertical .item {
+   left: 0;
+}

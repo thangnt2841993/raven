@@ -46,6 +46,16 @@
 header .header{
 	max-width: 100%;
 }
+.navbar-right .btn{
+	font-size: 20px;
+}
+.header ul li:hover{
+	border: 0px !important;
+	padding: 6px 15px !important;
+}
+.header ul li a{
+	padding: 0px !important;
+}
 header .header .info{
 	position: absolute;
 	top: 0%;
@@ -73,6 +83,9 @@ header .info p{
 .link-more{
 	padding-right: 10px;
 }
+.view-blog{
+	padding-top: 70px;
+}
 header .info a,
 .about a,
 .view-blog a,
@@ -98,6 +111,7 @@ header .info a,
 .view-blog a:hover,
 .product .mask-img a:hover{
 	color: 	#FF7F50;
+	transition: all 0.4s ease-in-out;
 }
 /*end head*/
 
@@ -185,6 +199,9 @@ header .info a,
 }
 .navbar ul li{
 	padding: 6px 15px;
+}
+.navbar ul li a:hover{
+	transition: all 0.4s ease-in-out;
 }
 .navbar ul li:hover{
 	border:3px solid #fff;
@@ -377,6 +394,7 @@ header .info a,
 }
 .img-info a:hover{
 	color: #FF7F50;
+	transition: 0.2s ease-in-out;
 }
 .img-blog .img-info img{
 	margin-top: 0px;
@@ -520,7 +538,7 @@ header .info a,
 }
 .video iframe{
 	width: 100%;
-	height: 570px;
+	height: 470px;
 
 }
 footer{
@@ -556,6 +574,7 @@ footer{
 #top .fa:hover{
 	color: #222222;
 	background-color: #fff;
+	transition: all 0.4s ease-in-out;
 }
 #bottom{
 	padding-top: 75px;
@@ -568,14 +587,15 @@ footer{
 }
 @media (max-width:767px) {
 	header .header .info h1{
-		padding-top: 20%;
-		font-size: 16px;
+		padding-top: 25%;
+		font-size: 28px;
 		line-height: 10px;
 	}
 	header .info p{
 		padding-top: 10px;
 		font-size: 14px;
 		line-height: 20px;
+		padding-bottom: 20px;
 	}
 	.content .about{
 		text-align: center;
@@ -612,6 +632,7 @@ footer{
 		padding-top: 10px;
 		font-size: 14px;
 		line-height: 20px;
+		padding-bottom: 20px;
 	}
 	.content .about h1,
 	.content .info-our h1,
@@ -647,6 +668,13 @@ footer{
 @media (max-width: 1200px){
 	.extra{
 		height: auto;
+	}
+	.extra .one img{
+		margin: 0px;
+	}
+	.video iframe{
+		width: 100%;
+		height: 570px;
 	}
 }
 @media (min-width:1700px) {
